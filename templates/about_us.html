@@ -1,0 +1,663 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- ================= HERO SECTION WITH PARALLAX ================= -->
+<section class="relative pt-20 h-[75vh] md:h-[70vh] flex items-center justify-center text-white overflow-hidden">
+
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img src="{% static 'images/about3.png' %}"
+         class="w-full h-full object-cover object-center"
+         alt="Zero Waste Background"
+         style="animation: slowZoom 20s infinite alternate;">
+  </div>
+
+  <!-- Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/80 animate-gradient"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center max-w-4xl px-6">
+
+    <span class="inline-block px-4 py-2 bg-emerald-500/20 backdrop-blur-sm rounded-full text-sm font-semibold mb-6 border border-emerald-400/30">
+      ⚡ Zero Waste Solutions
+    </span>
+    
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+      Transforming Waste Into
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">
+        Opportunity
+      </span>
+    </h1>
+    
+    <p class="text-base md:text-lg text-gray-200 max-w-2xl mx-auto leading-relaxed">
+      We build structured, secure, and sustainable waste management systems
+      that help organizations operate responsibly while driving measurable impact.
+    </p>
+
+    <div class="flex gap-4 justify-center mt-8">
+<a href="#"
+   style="background-color:#059669;"
+   class="relative inline-flex items-center px-10 py-4
+          text-white font-semibold rounded-full
+          transition-all duration-300
+          hover:scale-105"
+   onmouseover="this.style.backgroundColor='#047857'"
+   onmouseout="this.style.backgroundColor='#059669'">
+
+  <span class="flex items-center gap-2">
+    Get Started
+    <svg class="w-5 h-5 transition-transform duration-300 hover:translate-x-1"
+         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M13 7l5 5m0 0l-5 5m5-5H6" />
+    </svg>
+  </span>
+
+</a>
+    </div>
+  </div>
+
+</section>
+<!-- ================= WHAT WE DO (Modern Split Section) ================= -->
+<section class="py-32 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
+  <div class="container mx-auto px-6 lg:px-12">
+
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <span class="text-emerald-600 font-semibold tracking-wider uppercase animate-fadeIn">Our Services</span>
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-6 animate-slideUp">
+        What We Actually Do
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto text-lg animate-slideUp delay-100">
+        We design and operate end-to-end electronic waste management systems —
+        from secure collection to advanced material recovery.
+      </p>
+    </div>
+
+    <!-- Split Content -->
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- Left Content with Animated Cards -->
+      <div class="space-y-6 animate-slideRight">
+        <div class="group p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-emerald-500">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <span class="text-emerald-600 text-2xl">🔒</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Enterprise-grade secure logistics</h3>
+              <p class="text-gray-600">End-to-end tracking and secure transportation for all e-waste</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-emerald-500 delay-100">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <span class="text-emerald-600 text-2xl">💾</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Certified data destruction</h3>
+              <p class="text-gray-600">NSA/CSS compliant data sanitization with certificates</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-emerald-500 delay-200">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <span class="text-emerald-600 text-2xl">♻️</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">High-efficiency recycling</h3>
+              <p class="text-gray-600">Advanced material recovery with 92%+ efficiency rate</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-emerald-500 delay-300">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <span class="text-emerald-600 text-2xl">📊</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">ESG-compliant reporting</h3>
+              <p class="text-gray-600">Comprehensive sustainability reports and documentation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side - Filled with Content -->
+      <div class="relative animate-slideLeft">
+        <!-- Main Content Card -->
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+          <!-- Stats Preview -->
+          <div class="bg-gradient-to-r from-emerald-600 to-teal-600 p-8 text-white">
+            <h3 class="text-2xl font-bold mb-4">Our Impact in 2024</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <div class="text-3xl font-bold">15K+</div>
+                <div class="text-sm opacity-90">Tons Processed</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold">500+</div>
+                <div class="text-sm opacity-90">Clients Served</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold">98%</div>
+                <div class="text-sm opacity-90">Recovery Rate</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold">Zero</div>
+                <div class="text-sm opacity-90">Landfill Waste</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Process Timeline -->
+          <div class="p-8">
+            <h4 class="text-lg font-semibold text-gray-900 mb-6">Our Process</h4>
+            <div class="space-y-4">
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center font-bold text-emerald-600">1</div>
+                <div>
+                  <p class="font-semibold text-gray-900">Secure Collection</p>
+                  <p class="text-sm text-gray-600">From your doorstep to our facility</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center font-bold text-emerald-600">2</div>
+                <div>
+                  <p class="font-semibold text-gray-900">Data Destruction</p>
+                  <p class="text-sm text-gray-600">Certified & documented</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center font-bold text-emerald-600">3</div>
+                <div>
+                  <p class="font-semibold text-gray-900">Material Recovery</p>
+                  <p class="text-sm text-gray-600">Advanced sorting & recycling</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center font-bold text-emerald-600">4</div>
+                <div>
+                  <p class="font-semibold text-gray-900">ESG Reporting</p>
+                  <p class="text-sm text-gray-600">Comprehensive impact reports</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Certificate Badges -->
+            <div class="mt-8 flex gap-3">
+              <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-semibold text-gray-600">ISO 14001</span>
+              <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-semibold text-gray-600">R2 Certified</span>
+              <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-semibold text-gray-600">e-Stewards</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute -top-4 -right-4 w-24 h-24 bg-emerald-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-teal-500 rounded-full blur-3xl opacity-20 animate-pulse delay-1000"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT WE OFFER SECTION ================= -->
+<section class="py-28 relative overflow-hidden">
+
+  <!-- Dark Gradient Background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-emerald-900"></div>
+
+  <div class="relative container mx-auto px-6 lg:px-12 text-center">
+
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-bold text-white mb-16">
+      What We Offer
+    </h2>
+
+    <!-- Cards -->
+    <div class="grid md:grid-cols-3 gap-12">
+
+      <!-- Card 1 -->
+      <div class="group p-10 bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 
+                  hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+
+        <div class="text-emerald-400 text-5xl mb-6">🏅</div>
+
+        <h3 class="text-2xl font-semibold text-white mb-4">
+          Zero Waste Certification
+        </h3>
+
+        <p class="text-gray-300 leading-relaxed">
+          Achieve Bronze, Silver, Gold, or Platinum certification through
+          a structured and transparent evaluation process tailored to
+          your organization.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="group p-10 bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 
+                  hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+
+        <div class="text-emerald-400 text-5xl mb-6">🤝</div>
+
+        <h3 class="text-2xl font-semibold text-white mb-4">
+          Ongoing Support
+        </h3>
+
+        <p class="text-gray-300 leading-relaxed">
+          We provide tools, monitoring systems, and expert guidance
+          to help you maintain momentum and continuously improve
+          your sustainability performance.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="group p-10 bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 
+                  hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+
+        <div class="text-emerald-400 text-5xl mb-6">🌍</div>
+
+        <h3 class="text-2xl font-semibold text-white mb-4">
+          Real Measurable Impact
+        </h3>
+
+        <p class="text-gray-300 leading-relaxed">
+          Every certified organization diverts waste from landfills,
+          reduces emissions, and contributes to building a more
+          responsible circular economy.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-16">
+        <a href="#"
+          style="background-color:#059669;"
+          class="inline-block px-10 py-4
+                  text-white font-semibold rounded-full
+                  transition-all duration-300 hover:scale-105"
+          onmouseover="this.style.backgroundColor='#047857'"
+          onmouseout="this.style.backgroundColor='#059669'">
+          Apply for Certification →
+        </a>
+    </div>
+
+  </div>
+</section>
+<!-- ================= WHY TRUST US WITH CARD FLIP EFFECT ================= -->
+<section class="py-32 bg-gradient-to-br from-gray-50 to-white">
+  <div class="container mx-auto px-6 lg:px-12">
+
+    <div class="text-center mb-16">
+      <span class="text-emerald-600 font-semibold tracking-wider uppercase animate-fadeIn">Why Choose Us</span>
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-6 animate-slideUp">
+        Why Organizations Trust Us
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto text-lg animate-slideUp delay-100">
+        We combine industry expertise with cutting-edge technology
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="group perspective">
+        <div class="relative preserve-3d group-hover:rotate-y-180 duration-1000" style="min-height: 280px;">
+          <!-- Front -->
+          <div class="backface-hidden absolute inset-0">
+            <div class="p-8 bg-white rounded-3xl shadow-xl hover:shadow-2xl h-full">
+              <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                <span class="text-emerald-600 text-3xl">✓</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Certified Operations</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Fully compliant processes aligned with ISO 14001 and R2 standards.
+              </p>
+            </div>
+          </div>
+          <!-- Back -->
+          <div class="backface-hidden rotate-y-180 absolute inset-0">
+            <div class="p-8 bg-emerald-600 rounded-3xl shadow-xl h-full flex flex-col items-center justify-center">
+              <h3 class="text-2xl font-bold text-white mb-4">Certified</h3>
+              <p class="text-white text-center">ISO 14001 • R2 • e-Stewards</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="group perspective">
+        <div class="relative preserve-3d group-hover:rotate-y-180 duration-1000" style="min-height: 280px;">
+          <div class="backface-hidden absolute inset-0">
+            <div class="p-8 bg-white rounded-3xl shadow-xl h-full">
+              <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                <span class="text-emerald-600 text-3xl">🔐</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Data Security First</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Secure chain-of-custody and documented destruction protocols.
+              </p>
+            </div>
+          </div>
+          <div class="backface-hidden rotate-y-180 absolute inset-0">
+            <div class="p-8 bg-emerald-600 rounded-3xl shadow-xl h-full flex flex-col items-center justify-center">
+              <h3 class="text-2xl font-bold text-white mb-4">NSA/CSS Compliant</h3>
+              <p class="text-white text-center">Complete data destruction guarantee</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="group perspective">
+        <div class="relative preserve-3d group-hover:rotate-y-180 duration-1000" style="min-height: 280px;">
+          <div class="backface-hidden absolute inset-0">
+            <div class="p-8 bg-white rounded-3xl shadow-xl h-full">
+              <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                <span class="text-emerald-600 text-3xl">📋</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Transparent Reporting</h3>
+              <p class="text-gray-600 leading-relaxed">
+                ESG-ready impact metrics and compliance documentation.
+              </p>
+            </div>
+          </div>
+          <div class="backface-hidden rotate-y-180 absolute inset-0">
+            <div class="p-8 bg-emerald-600 rounded-3xl shadow-xl h-full flex flex-col items-center justify-center">
+              <h3 class="text-2xl font-bold text-white mb-4">Real-time Dashboard</h3>
+              <p class="text-white text-center">24/7 access to your impact metrics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FAQ SECTION ================= -->
+<section class="py-28 bg-gray-50">
+  <div class="container mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-16 items-start">
+
+    <!-- LEFT SIDE – FAQ ACCORDION -->
+    <div>
+
+      <h2 class="text-4xl font-bold text-gray-900 mb-10">
+        Common Questions About Certification
+      </h2>
+
+      <div class="space-y-6">
+
+        <!-- FAQ Item -->
+        <div class="group border border-gray-200 rounded-xl p-6 bg-white hover:shadow-lg transition duration-300">
+          <h3 class="text-lg font-semibold text-gray-900 flex justify-between items-center cursor-pointer">
+            What qualifies a business for Zero Waste certification?
+            <span class="text-emerald-600 group-hover:rotate-45 transition-transform">+</span>
+          </h3>
+          <p class="text-gray-600 mt-4 leading-relaxed">
+            Businesses must demonstrate measurable waste diversion,
+            documented recycling practices, and structured sustainability systems.
+          </p>
+        </div>
+
+        <div class="group border border-gray-200 rounded-xl p-6 bg-white hover:shadow-lg transition duration-300">
+          <h3 class="text-lg font-semibold text-gray-900 flex justify-between items-center cursor-pointer">
+            How long does the certification process take?
+            <span class="text-emerald-600 group-hover:rotate-45 transition-transform">+</span>
+          </h3>
+          <p class="text-gray-600 mt-4 leading-relaxed">
+            Timelines vary depending on readiness, but most organizations
+            complete the evaluation within a few months.
+          </p>
+        </div>
+
+        <div class="group border border-gray-200 rounded-xl p-6 bg-white hover:shadow-lg transition duration-300">
+          <h3 class="text-lg font-semibold text-gray-900 flex justify-between items-center cursor-pointer">
+            What documentation is required?
+            <span class="text-emerald-600 group-hover:rotate-45 transition-transform">+</span>
+          </h3>
+          <p class="text-gray-600 mt-4 leading-relaxed">
+            Waste audits, recovery reports, disposal records,
+            and compliance documentation are typically required.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mt-8">
+      <a href="#"
+        class="relative z-20 inline-block px-8 py-3 
+                bg-green-600 text-white font-semibold rounded-full
+                hover:bg-green-700 transition duration-300 
+                hover:shadow-lg hover:shadow-green-400/40">
+        Explore Full FAQ →
+      </a>
+      </div>
+
+    </div>
+
+    <div>
+
+      <h3 class="text-4xl font-bold text-gray-900 mb-6">
+        Need More Guidance?
+      </h3>
+
+      <p class="text-gray-600 text-lg leading-relaxed mb-8">
+        Whether you're starting your sustainability journey or preparing
+        for advanced certification levels, our team provides structured
+        support and clear evaluation pathways.
+      </p>
+
+      <img src="{% static 'images/faq.jpg' %}"
+           alt="Sustainability Guidance"
+           class="rounded-2xl shadow-xl w-full">
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= CTA SECTION ================= -->
+<section class="relative py-28 text-white overflow-hidden">
+
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img src="{% static 'images/last-about-section.webp' %}"
+         alt="Recycling Bins"
+         class="w-full h-full object-cover"
+         style="filter: blur(2px); transform: scale(1.08);">
+  </div>
+
+  <!-- Stronger Overlay -->
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <!-- Content -->
+  <div class="relative container mx-auto px-6 text-center">
+
+    <h2 class="text-4xl md:text-5xl font-bold mb-6"
+        style="text-shadow: 0 4px 20px rgba(0,0,0,0.6);">
+      Start Your Certification Journey Today
+    </h2>
+
+    <p class="text-lg max-w-2xl mx-auto mb-10 text-gray-100 leading-relaxed"
+       style="text-shadow: 0 2px 15px rgba(0,0,0,0.6);">
+      Take the next step toward responsible operations,
+      stronger ESG positioning, and measurable environmental leadership.
+    </p>
+
+    <!-- Proper Green Button -->
+<a href="#"
+   class="inline-block px-10 py-4 rounded-full font-semibold
+          bg-green-600 text-white
+          hover:bg-green-700
+          transition-all duration-300
+          hover:scale-105 hover:shadow-lg">
+   Apply for Certification →
+</a>
+  </div>
+
+</section>
+
+<!-- Custom CSS for animations -->
+<style>
+  @keyframes slowZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+  }
+  
+  @keyframes slowPan {
+    0% { transform: scale(1) translate(0, 0); }
+    100% { transform: scale(1.1) translate(-2%, -2%); }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideRight {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideLeft {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes blob {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(20px, -20px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0; }
+  }
+  
+  .animate-slideUp {
+    animation: slideUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .animate-slideRight {
+    animation: slideRight 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .animate-slideLeft {
+    animation: slideLeft 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  
+  .animate-bounce-slow {
+    animation: bounce 3s infinite;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s infinite;
+  }
+  
+  .animate-scroll {
+    animation: scroll 1.5s infinite;
+  }
+  
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  .animate-progress {
+    animation: progress 2s ease-out forwards;
+    transform-origin: left;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  @keyframes progress {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+  
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+  .delay-500 { animation-delay: 0.5s; }
+  .delay-1000 { animation-delay: 1s; }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  /* 3D Card Flip */
+  .perspective {
+    perspective: 1000px;
+  }
+  
+  .preserve-3d {
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  
+  .group:hover .group-hover\:rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+</style>
+
+{% endblock %}
