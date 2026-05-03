@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "nav_ewaste/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "nav_ewaste/wsgi.py"
+    }
+  ]
+}
